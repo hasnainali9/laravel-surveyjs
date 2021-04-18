@@ -3,10 +3,10 @@
 namespace Hasnainali9\LaravelSurveyJs\app\Http\Controllers\API;
 
 use Illuminate\Routing\Controller;
-use AidynMakhataev\LaravelSurveyJs\app\Models\Survey;
-use AidynMakhataev\LaravelSurveyJs\app\Http\Resources\SurveyResource;
-use AidynMakhataev\LaravelSurveyJs\app\Http\Requests\CreateSurveyRequest;
-use AidynMakhataev\LaravelSurveyJs\app\Http\Requests\UpdateSurveyRequest;
+use Hasnainali9\LaravelSurveyJs\app\Models\Survey;
+use Hasnainali9\LaravelSurveyJs\app\Http\Resources\SurveyResource;
+use Hasnainali9\LaravelSurveyJs\app\Http\Requests\CreateSurveyRequest;
+use Hasnainali9\LaravelSurveyJs\app\Http\Requests\UpdateSurveyRequest;
 
 class SurveyAPIController extends Controller
 {
