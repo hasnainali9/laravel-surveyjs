@@ -2,7 +2,7 @@
 
 Anyone is welcome to contribute. Fork, make your changes, and then submit a pull request.
 
-Contributions are accepted via Pull Requests on [Github](https://github.com/aidynmakhataev/laravelsurveyjs).
+Contributions are accepted via Pull Requests on [Github](https://github.com/AidynMakhataev/laravel-surveyjs).
 
 # TODO
 If you want to contribute but do not know where to start, this list provides some starting points.

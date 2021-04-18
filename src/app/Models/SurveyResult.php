@@ -1,6 +1,6 @@
 <?php
 
-namespace AidynMakhataev\LaravelSurveyJs\app\Models;
+namespace Hasnainali9\LaravelSurveyJs\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace AidynMakhataev\LaravelSurveyJs\app\Http\Requests;
+namespace Hasnainali9\LaravelSurveyJs\app\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

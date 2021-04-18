@@ -1,6 +1,6 @@
 <?php
 
-namespace AidynMakhataev\LaravelSurveyJs\app\Http\Resources;
+namespace Hasnainali9\LaravelSurveyJs\app\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

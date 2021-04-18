@@ -15,12 +15,18 @@ Laravel Survey Manager system based on surveyjs library. Take a look at [contrib
 $ composer require aidynmakhataev/laravelsurveyjs
 ```
 
-2) Publish the config file & run the migrations 
+2) Publish the config file  
 
 ```bash
-php artisan vendor:publish --provider="AidynMakhataev\LaravelSurveyJs\LaravelSurveyJsServiceProvider"
+php artisan vendor:publish --provider="Hasnainali9\LaravelSurveyJs\LaravelSurveyJsServiceProvider"
+```
+
+3) run the migrations
+
+```bash
 php artisan migrate
 ```
+
 
 3) Create a new survey on your-project-domain/admin/survey
 
@@ -39,10 +45,11 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 
 ## Security
 
-If you discover any security related issues, please email makataev.7@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email hasnain01022000@gmail.com instead of using the issue tracker.
 
 ## Credits
 
+- [Hasnain Ali][link-author]
 - [Aidyn Makhataev][link-author]
 - [All Contributors][link-contributors]
 
@@ -50,14 +57,14 @@ If you discover any security related issues, please email makataev.7@gmail.com i
 
 MIT. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/aidynmakhataev/laravelsurveyjs.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/aidynmakhataev/laravelsurveyjs.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/aidynmakhataev/laravelsurveyjs/master.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/hasnainali9/laravelsurveyjs.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/hasnainali9/laravelsurveyjs.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/hasnainali9/laravelsurveyjs/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/12345678/shield
 
-[link-packagist]: https://packagist.org/packages/aidynmakhataev/laravelsurveyjs
-[link-downloads]: https://packagist.org/packages/aidynmakhataev/laravelsurveyjs
+[link-packagist]: https://packagist.org/packages/hasnainali9/laravelsurveyjs
+[link-downloads]: https://packagist.org/packages/hasnainali9/laravelsurveyjs
 [link-travis]: https://travis-ci.org/aidynmakhataev/laravelsurveyjs
 [link-styleci]: https://styleci.io/repos/134269033
-[link-author]: https://github.com/aidynmakhataev
-[link-contributors]: ../../contributors]
+[link-author]: https://github.com/hasnainali9
+[link-contributors]: ./graphs/contributors]

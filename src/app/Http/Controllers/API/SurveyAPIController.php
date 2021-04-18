@@ -1,6 +1,6 @@
 <?php
 
-namespace AidynMakhataev\LaravelSurveyJs\app\Http\Controllers\API;
+namespace Hasnainali9\LaravelSurveyJs\app\Http\Controllers\API;
 
 use Illuminate\Routing\Controller;
 use AidynMakhataev\LaravelSurveyJs\app\Models\Survey;
