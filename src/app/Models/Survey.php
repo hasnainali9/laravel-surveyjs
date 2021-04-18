@@ -1,15 +1,8 @@
-<?php
-
-namespace Hasnainali9\LaravelSurveyJs\app\Models;
-
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Survey extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'surveys';
     protected $primaryKey = 'id';
 
     protected $fillable = [
@@ -20,12 +13,26 @@ class Survey extends Model
         'json'  =>  'array',
     ];
 
+    /**
+     * Survey constructor with custom table name definition
+     *
+     * @param array $attributes
+     */
+    public function __construct(array $attributes = [])
+    {
+        if (! isset($this->table)) {
+            $this->setTable(config('survey-manager.database.tables.surveys'));
+        }
+
+        parent::__construct($attributes);
+    }
+
     public static function boot()
     {
         parent::boot();
 
         static::creating(function ($survey) {
-            $survey->slug = str_slug($survey->name);
+            $survey->slug = Str::slug($survey->name);
 
             $latestSlug = static::whereRaw("slug = '$survey->slug' or slug LIKE '$survey->slug-%'")
                                 ->latest('id')
@@ -45,6 +52,6 @@ class Survey extends Model
      */
     public function results()
     {
-        return $this->hasMany('AidynMakhataev\LaravelSurveyJs\app\Models\SurveyResult', 'survey_id');
+        return $this->hasMany('Fruitware\LaravelSurveyJS\LaravelSurveyJS\Models\SurveyResult', 'survey_id');
     }
 }
