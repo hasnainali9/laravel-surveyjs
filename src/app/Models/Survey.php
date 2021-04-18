@@ -1,6 +1,6 @@
 <?php
 
-namespace Hasnainali9\LaravelSurveyJs\LaravelSurveyJS\Models;
+namespace Hasnainali9\LaravelSurveyJs\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 /**
  * Class Survey
  *
- * @package Fruitware/LaravelSurveyJS
+ * @package Hasnainali9/LaravelSurveyJS
  */
 class Survey extends Model
 {
