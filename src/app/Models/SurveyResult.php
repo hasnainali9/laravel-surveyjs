@@ -1,6 +1,6 @@
 <?php
 
-namespace Hasnainali9\LaravelSurveyJS\Models;
+namespace Hasnainali9\LaravelSurveyJs\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -39,9 +39,9 @@ class SurveyResult extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function survey()
+      public function survey()
     {
-        return $this->belongsTo('Hasnainali9\LaravelSurveyJS\Models\Survey', 'survey_id');
+        return $this->belongsTo('Hasnainali9\LaravelSurveyJs\app\Models\Survey', 'survey_id');
     }
 
     /**
