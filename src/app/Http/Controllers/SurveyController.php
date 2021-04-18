@@ -3,7 +3,7 @@
 namespace Hasnainali9\LaravelSurveyJs\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use AidynMakhataev\LaravelSurveyJs\app\Models\Survey;
+use Hasnainali9\LaravelSurveyJs\app\Models\Survey;
 
 class SurveyController extends Controller
 {
