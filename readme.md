@@ -28,9 +28,9 @@ php artisan migrate
 ```
 
 
-3) Create a new survey on your-project-domain/admin/survey
+4) Create a new survey on your-project-domain/admin/survey
 
-4) [optional] Change values in config/survey-manager.php (route prefix, middleware, builder theme etc.)
+5) [optional] Change values in config/survey-manager.php (route prefix, middleware, builder theme etc.)
 
 ## Usage
 TODO
