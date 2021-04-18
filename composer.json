@@ -1,0 +1,47 @@
+{
+    "name": "hasnainali9/laravelsurveyjs",
+    "description": "Laravel wrapper for surveyjs library",
+    "license": "MIT",
+    "version": "1.1.0",
+    "authors": [
+        {
+            "name": "Hasnain Ali",
+            "email": "hasnain01022000@gmail.com",
+            "homepage": "https://github.com/hasnainali9"
+        }
+    ],
+    "homepage": "https://github.com/hasnainali9/laravel-surveyjs",
+    "keywords": [
+        "Laravel", "LaravelSurveyJs", "surveyjs", "survey manager", "laravel survey", "survey editor", "surveyjs builder", "hasnainali9"
+    ],
+     "require": {
+        "php": "^7.2",
+        "cviebrock/eloquent-sluggable": "*",
+        "illuminate/database": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "orchestra/testbench": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hasnainali9\\LaravelSurveyJs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hasnainali9\\LaravelSurveyJs\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hasnainali9\\LaravelSurveyJs\\LaravelSurveyJsServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSurveyJs": "Hasnainali9\\LaravelSurveyJs\\Facades\\LaravelSurveyJs"
+            }
+        }
+    }
+}
