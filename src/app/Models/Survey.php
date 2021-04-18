@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 /**
  * Class Survey
  *
- * @package Hasnainali9/LaravelSurveyJS
+ * @package Fruitware/LaravelSurveyJS
  */
 class Survey extends Model
 {
@@ -62,8 +62,8 @@ class Survey extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
-    public function results()
+     public function results()
     {
-        return $this->hasMany('Hasnainali9\LaravelSurveyJS\LaravelSurveyJS\Models\SurveyResult', 'survey_id');
+        return $this->hasMany('Hasnainali9\LaravelSurveyJs\app\Models\SurveyResult', 'survey_id');
     }
 }
