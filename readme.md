@@ -12,19 +12,19 @@ Laravel Survey Manager system based on surveyjs library. Take a look at [contrib
 1) In your terminal:
 
 ``` bash
-$ composer require aidynmakhataev/laravelsurveyjs
+$ composer require hasnainali9/laravelsurveyjs
 ```
 
 2) Publish the config file  
 
 ```bash
-php artisan vendor:publish --provider="Hasnainali9\LaravelSurveyJs\LaravelSurveyJsServiceProvider"
+$ php artisan vendor:publish --provider="Hasnainali9\LaravelSurveyJs\LaravelSurveyJsServiceProvider"
 ```
 
 3) run the migrations
 
 ```bash
-php artisan migrate
+$ php artisan migrate
 ```
 
 
