@@ -50,7 +50,6 @@ If you discover any security related issues, please email hasnain01022000@gmail.
 ## Credits
 
 - [Hasnain Ali][link-author]
-- [Aidyn Makhataev][link-author]
 - [All Contributors][link-contributors]
 
 ## License
