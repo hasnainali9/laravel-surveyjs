@@ -41,7 +41,7 @@ class SurveyResult extends Model
      */
     public function survey()
     {
-        return $this->belongsTo('Fruitware\LaravelSurveyJS\LaravelSurveyJS\Models\Survey', 'survey_id');
+        return $this->belongsTo('Hasnainali9\LaravelSurveyJS\Models\Survey', 'survey_id');
     }
 
     /**
