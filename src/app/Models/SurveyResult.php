@@ -1,25 +1,47 @@
 <?php
 
-namespace Hasnainali9\LaravelSurveyJs\app\Models;
+namespace Hasnainali9\LaravelSurveyJS\LaravelSurveyJS\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class SurveyResult
+ *
+ * @package Hasnainali9/LaravelSurveyJS
+ */
 class SurveyResult extends Model
 {
-    protected $table = 'survey_results';
     protected $fillable = [
-        'survey_id', 'user_id', 'ip_address', 'json',
+        'survey_id',
+        'user_id',
+        'ip_address',
+        'json',
     ];
     protected $casts = [
-        'json'  =>  'array',
+        'json' => 'array',
     ];
+
+    /**
+     * Survey constructor with custom table name definition
+     *
+     * @param array $attributes
+     */
+    public function __construct(array $attributes = [])
+    {
+        if (!isset($this->table)) {
+            $this->setTable(config('survey-manager.database.tables.survey_results'));
+        }
+
+        parent::__construct($attributes);
+    }
+
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function survey()
     {
-        return $this->belongsTo('AidynMakhataev\LaravelSurveyJs\app\Models\Survey', 'survey_id');
+        return $this->belongsTo('Fruitware\LaravelSurveyJS\LaravelSurveyJS\Models\Survey', 'survey_id');
     }
 
     /**
