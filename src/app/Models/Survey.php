@@ -64,6 +64,6 @@ class Survey extends Model
      */
     public function results()
     {
-        return $this->hasMany('Fruitware\LaravelSurveyJS\LaravelSurveyJS\Models\SurveyResult', 'survey_id');
+        return $this->hasMany('Hasnainali9\LaravelSurveyJS\LaravelSurveyJS\Models\SurveyResult', 'survey_id');
     }
 }
